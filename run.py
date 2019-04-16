@@ -8,8 +8,8 @@ from dicmaker import removedic1, removedic2, removedic3
 def makedictionary():
 
     # 읽어올 파일들이 들어있는 디렉토리 경로 지정
-    #path = 'C:/Users/wonbee/Desktop/'
-    path = 'C:/Users/Solugate/Desktop/새폴더/2/'
+    path = 'C:/Users/wonbee/Desktop/'
+
 
     # 디렉토리에서 파일 목록 가져옴
     file_list = os.listdir(path)
@@ -23,15 +23,15 @@ def makedictionary():
 
     for list in file_list_html:
         # 디렉토리를 돌며 리스트에 있는 파일들 open
-        #file = open('C:/Users/wonbee/Desktop/{}'.format(list))
-        file = open('C:/Users/Solugate/Desktop/새폴더/2/{}'.format(list))
+        file = open('C:/Users/wonbee/Desktop/{}'.format(list))
+
 
         # html 변수에 데이터 저장
         html = file.read()
 
         #저장할 파일경로와, 파일명 지정, a는 내용에 추가한다는 뜻이다. UTF-8로 인코딩한다.
-        #f=open('C:/Users/wonbee/desktop/folder/test.txt','a',encoding='utf8')
-        f = open('C:/Users/Solugate/Desktop/aaaaa/run2.txt','a',encoding='utf8')
+        f=open('C:/Users/wonbee/desktop/folder/test.txt','a',encoding='utf8')
+
 
         for i in range(f is not ' '):
 
